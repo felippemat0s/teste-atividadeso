@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted # Aqui indicamos que será executado em um agente próprio EC2
     steps:
       - name: Pull Docker image # Aqui estamos puxando a imagem do Docker Hub
-        run: docker pull joaoschettini/lab10-imagem:latest
+        run: docker pull felippemat0s/lab10-imagem:latest
 
       - name: Stop Docker container # Aqui estamos parando o container, caso ele esteja rodando
         run: docker stop lab10-imagem || true
@@ -19,4 +19,4 @@ jobs:
         run: docker rm lab10-imagem || true
 
       - name: Run Docker container # Aqui estamos rodando o container
-        run: docker run --name lab10-imagem -d -p 8080:8080 joaoschettini/lab10-imagem:latest
+        run: docker run --name lab10-imagem -d -p 8080:8080 felippemat0s/lab10-imagem:latest

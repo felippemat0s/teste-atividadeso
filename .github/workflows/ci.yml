@@ -62,4 +62,4 @@ jobs: # Trabalhos a serem executados
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: joaoschettini/lab10-imagem:latest  # <-- altere para seu usuario/nome-imagem:versao
+          tags: felippemat0s/lab10-imagem:latest  # <-- altere para seu usuario/nome-imagem:versao
